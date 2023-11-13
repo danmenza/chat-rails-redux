@@ -1,0 +1,8 @@
+<h1>Channels#show</h1>
+<p>Find me in app/views/channels/show.html.erb</p>
+
+<div id="chat_app"></div>
+
+<% content_for :after_js do %>
+    <%= javascript_pack_tag "chat.js", "data-turbo-track": "reload", defer: true %>
+        <% end %>
